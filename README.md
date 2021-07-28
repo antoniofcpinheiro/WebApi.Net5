@@ -49,6 +49,8 @@ Este método não exige autenticação.
   "senha": "Aa@123456789101"
 }
 
+![alt text](https://github.com/antoniofcpinheiro/WebApi.Net5/blob/main/ValidarUsuario.png)
+
 * GerarSenha () - Tem o objetivo de criar uma senha, levando em consideração as mesmas
 regras descritas no Método 2.
 
