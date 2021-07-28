@@ -26,7 +26,7 @@ namespace Net5.Application.UsuarioUseCases.Validations
         }
         public static bool PossuirCaractererEspecial(this string senha)
         {
-            return new Regex("(?=.*?[#?!@$%^&*\\-,_])").IsMatch(senha);
+            return new Regex("(?=.*?[#@\\-_!])").IsMatch(senha);
         }
         public static bool CarectereEmSequencialPermitida(this string senha)
         {

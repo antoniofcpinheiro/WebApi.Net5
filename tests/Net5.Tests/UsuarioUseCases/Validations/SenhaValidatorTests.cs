@@ -10,13 +10,10 @@ namespace Net5.Tests.UsuarioUseCases.Validations
         [InlineData("Aa123@123012345")]
         [InlineData("Aa123_123012345")]
         [InlineData("Aa123#123012345")]
-        [InlineData("Aa123%123012345")]
-        [InlineData("Aa123&123012345")]
-        [InlineData("Aa123!123012345")]
-        [InlineData("Aa123^123012345")]
-        [InlineData("Aa123-123012345")]
-        [InlineData("Aa123?123012345")]
-        [InlineData("Aa123?123012345?123012345?123012345?123012345?123012345?123012345")]
+        [InlineData("Aa123!123012345")]        
+        [InlineData("Aa123-123012345")]        
+        [InlineData("Aa-1234567891234")]        
+        [InlineData("Aa123#123012345?123012345?123012345?123012345?123012345?123012345")]
         public void DeveValidarSenhaCorreta(string senha)
         {
             // Arrange                        
@@ -34,12 +31,9 @@ namespace Net5.Tests.UsuarioUseCases.Validations
         [InlineData("AX123@123012345")]
         [InlineData("AX123_123012345")]
         [InlineData("AX123#123012345")]
-        [InlineData("AX123%123012345")]
-        [InlineData("AX123&123012345")]
         [InlineData("AX123!123012345")]
-        [InlineData("AX123^123012345")]
         [InlineData("AX123-123012345")]
-        [InlineData("AX123?123012345")]
+        
         public void NaoDeveValidarSemCaracterMinusculo(string senha)
         {
             // Arrange            
@@ -58,12 +52,9 @@ namespace Net5.Tests.UsuarioUseCases.Validations
         [InlineData("AA123@123012345")]
         [InlineData("A1123_123012345")]
         [InlineData("AX12##123012345")]
-        [InlineData("111123%113012345")]
-        [InlineData("AX123&1230&&345")]
-        [InlineData("AX123!123012345")]
-        [InlineData("AX123^1230123^^")]
+        [InlineData("AX123!123012345")]        
         [InlineData("AX123-1230123bb")]
-        [InlineData("aa123?123012345")]
+        [InlineData("aa123!123012345")]
         public void NaoDeveValidarCaracterRepetidoEmSequencia(string senha)
         {
 

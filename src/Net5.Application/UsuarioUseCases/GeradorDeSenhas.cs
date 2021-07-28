@@ -7,10 +7,10 @@ namespace Net5.Application.UsuarioUseCases
 {
     public class GeradorDeSenhas : IGeradorDeSenhas
     {
-        const string CARACTERES_ESPECIAIS = "#?!@$%^&*-_";
+        const string CARACTERES_ESPECIAIS = "#@-_!";
         const string CARACTERES_MINUSCULOS = "abcdefghijklmnopqrstuvwxyz";
         const string CARACTERES_MAIUSCULOS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-        const string CARACTERES_GERAIS = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789#?!@$%^&*-_";
+        const string CARACTERES_GERAIS = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789#@-_!";
         public string GerarSenha()
         {
             var senhaGerada = GerarSequencia();
