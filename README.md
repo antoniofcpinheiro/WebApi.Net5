@@ -41,11 +41,8 @@ Este método não exige autenticação.
   Parâmetros de Saída: usuário, autenticado (True/False), token e data de expiração do Token
   
   Usuario para teste : Para geração do token deve ser informado qualquer usuário que tenha a senha dentro do padrão estabelecido.
-  Exemplo :
-  {
-  "usuario": "antonio.pinheiro",
-  "senha": "Aa@123456789101"
-}
+  
+   Exemplo : { "usuario": "antonio.pinheiro", "senha": "Aa@123456789101" }
 
 ![alt text](https://github.com/antoniofcpinheiro/WebApi.Net5/blob/master/ValidarUsuario.png)
 
@@ -56,7 +53,8 @@ regras descritas no Método 2.
 
    Parâmetros de Saída: senha válida criada.
    
-   
+    Exemplo :
+    
  ![alt text](https://github.com/antoniofcpinheiro/WebApi.Net5/blob/master/GerarSenha.png)  
 
 
@@ -78,6 +76,7 @@ regras abaixo:
 
    Parâmetros de Saída: senha válida (True/False).
    
+    Exemplo :   
    
  ![alt text](https://github.com/antoniofcpinheiro/WebApi.Net5/blob/master/ValidarSenha.png)    
    
