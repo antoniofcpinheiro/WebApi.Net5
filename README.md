@@ -55,6 +55,9 @@ regras descritas no Método 2.
    Parâmetros de Entrada: nenhum.
 
    Parâmetros de Saída: senha válida criada.
+   
+   
+ ![alt text](https://github.com/antoniofcpinheiro/WebApi.Net5/blob/master/GerarSenha.png)  
 
 
 * ValidarSenha() - Tem o objetivo de validar se determinada senha é válida de acordo com as
@@ -74,6 +77,10 @@ regras abaixo:
    Parâmetros de Entrada: senha a ser validada.
 
    Parâmetros de Saída: senha válida (True/False).
+   
+   
+ ![alt text](https://github.com/antoniofcpinheiro/WebApi.Net5/blob/master/ValidarSenha.png)    
+   
   
   
 
