@@ -22,7 +22,7 @@ namespace Net5.Application.UsuarioUseCases
         }
 
         public string GerarSenha() => _geradorDeSenhas.GerarSenha();
-        public bool ValidarSenha(string senha) => senha.Validar();
+        public SenhaResponse ValidarSenha(string senha) => new(senha.Validar());
 
         public UsuarioResponse GerarToken(UsuarioRequest request)
         {

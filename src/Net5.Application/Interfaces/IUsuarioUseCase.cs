@@ -6,7 +6,7 @@ namespace Net5.Application.Interfaces
     public interface IUsuarioUseCase
     {
         UsuarioResponse GerarToken(UsuarioRequest request);
-        bool ValidarSenha(string senha);
+        SenhaResponse ValidarSenha(string senha);
         string GerarSenha();
     }
 }

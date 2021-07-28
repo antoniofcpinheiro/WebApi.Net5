@@ -33,7 +33,7 @@ namespace Net5.Tests.UsuarioUseCases
         }
 
         [Fact]
-        public void DeveValidarSenhaGeradaUseCase()
+        public void DeveValidarMetodoGerarSenha()
         {
             // Arrange
             var senhaCorreta = "1234567890@aA_*";
@@ -52,6 +52,22 @@ namespace Net5.Tests.UsuarioUseCases
             // Assert
             Assert.True(result.Equals("1234567890@aA_*"));
             this._mockRepository.Verify();
+        }
+
+        [Fact]
+        public void DeveValidarMetodoValidarSenha()
+        {
+            // Arrange
+            var senhaCorreta = "1234567890@aA_*"; 
+            var usuarioUseCase = this.CreateUsuarioUseCase(); 
+
+            // Act
+            var result = usuarioUseCase
+                .ValidarSenha(senhaCorreta);
+
+            // Assert
+            Assert.True(result.SenhaValida,"Validação de senha incorreta");
+             
         }
 
         [Fact]

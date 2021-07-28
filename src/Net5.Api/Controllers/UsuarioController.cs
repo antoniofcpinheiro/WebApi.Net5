@@ -31,7 +31,7 @@ namespace Net5.Api.Controllers
         [HttpGet]
         [Route(nameof(ValidarSenha))]
         [Authorize]
-        public bool ValidarSenha(string senha) =>
+        public SenhaResponse ValidarSenha(string senha) =>
             _useCase.ValidarSenha(senha);
     }
 }

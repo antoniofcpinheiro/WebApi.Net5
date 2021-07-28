@@ -5,7 +5,6 @@ namespace Net5.Api.StartupConfig
 {
     public static class ServicesConfig
     {
-
         public static IServiceCollection ConfigureServices( this IServiceCollection services)
         {
 
