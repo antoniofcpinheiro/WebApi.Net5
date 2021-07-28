@@ -29,6 +29,9 @@ Nuget adicionais :
     
 Testes de unidade : 
     Desenvolvido em Xunit  
+    
+    
+ 
 
 # UsuarioController 
 
@@ -38,6 +41,13 @@ Este método não exige autenticação.
   Parâmetros de Entrada: usuário e senha
 
   Parâmetros de Saída: usuário, autenticado (True/False), token e data de expiração do Token
+  
+  Usuario para teste : Para geração do token deve ser informado qualquer usuário que tenha a senha dentro do padrão estabelecido.
+  Exemplo :
+  {
+  "usuario": "antonio.pinheiro",
+  "senha": "Aa@123456789101"
+}
 
 * GerarSenha () - Tem o objetivo de criar uma senha, levando em consideração as mesmas
 regras descritas no Método 2.
