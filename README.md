@@ -42,28 +42,28 @@ Este método não exige autenticação.
 * GerarSenha () - Tem o objetivo de criar uma senha, levando em consideração as mesmas
 regras descritas no Método 2.
 
-  ✓ Parâmetros de Entrada: nenhum.
+   Parâmetros de Entrada: nenhum.
 
-  ✓ Parâmetros de Saída: senha válida criada.
+   Parâmetros de Saída: senha válida criada.
 
 
 * ValidarSenha() - Tem o objetivo de validar se determinada senha é válida de acordo com as
 regras abaixo:
-  ✓ Conter no mínimo 15 caracteres.
+   Conter no mínimo 15 caracteres.
 
-  ✓ No mínimo uma letra maiúscula.
+   No mínimo uma letra maiúscula.
 
-  ✓ No mínimo uma letra minúscula.
+   No mínimo uma letra minúscula.
 
-  ✓ No mínimo um dos seguintes caracteres especiais: (@,#,_,- e !).
+   No mínimo um dos seguintes caracteres especiais: (@,#,_,- e !).
 
-  ✓ Não poder ter caracteres repetidos em sequência, por exemplo: 1111, aaaa, bbbb, @@@@, BBBB.
+   Não poder ter caracteres repetidos em sequência, por exemplo: 1111, aaaa, bbbb, @@@@, BBBB.
 
-  ✓ Prever case-sensitive, por exemplo: A é diferente de a.
+   Prever case-sensitive, por exemplo: A é diferente de a.
 
-  ✓ Parâmetros de Entrada: senha a ser validada.
+   Parâmetros de Entrada: senha a ser validada.
 
-  ✓ Parâmetros de Saída: senha válida (True/False).
+   Parâmetros de Saída: senha válida (True/False).
   
   
 
